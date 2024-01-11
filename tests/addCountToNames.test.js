@@ -13,7 +13,6 @@ it('addCountToNames() check if add the right number at the right place', () => {
 });
 
 
-
 it('addCountToNames() check if the order is still the same for the countries name', () => {
     expect(result[0]).toHaveProperty('name',); 
     expect(result[1]).toHaveProperty('name', 'Tohabdal [4]'); 

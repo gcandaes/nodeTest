@@ -1,5 +1,4 @@
 function addCountToNames(data) {
-    //console.log('data : ', data);
     function processItem(item) {
 
         function processChild(child) {
@@ -14,7 +13,6 @@ function addCountToNames(data) {
         }
         return { ...item, name: `${item.name} [${item.people.length}]` };
     }
-   // console.log(data);
     return data.map(processItem);
 }
 

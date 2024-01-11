@@ -48,7 +48,6 @@ if (!filterArg) {
 }
 
 const pattern = filterArg.split('=')[1];
-console.log('PATTERN = ', pattern);
 
 const filteredData = filterData(pattern, data);
 const dataWithCount = addCountToNames(filteredData);

@@ -15,14 +15,9 @@ it('should filter the data and get object with length = 1', () => {
 })
 
 it('should respect the initial order', () => {
-    console.log('result 2: ', JSON.stringify(resultFilterCa, null,4));
-
     expect(resultFilterCa[0].people[0].animals[0]).toHaveProperty('name', 'Caecilian');
     expect(resultFilterCa[0].people[0].animals[1]).toHaveProperty('name', 'Sand Cat');
     expect(resultFilterCa[1].people[0].animals[0]).toHaveProperty('name', 'African Wild Ass');
     expect(resultFilterCa[1].people[1].animals[0]).toHaveProperty('name', 'African Wild Dog');
     expect(resultFilterCa[1].people[2].animals[0]).toHaveProperty('name', 'Sand Cat');
-
-
-
 })
